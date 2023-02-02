@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
+gem "awesome_print", require:"ap"
+gem 'pry', require: false
+gem 'rake', require: false
 gem 'rom'
 gem 'rom-sql'
-gem 'rake'
-gem 'mysql2'
+gem 'sqlite3'
 
-gem "awesome_print", require:"ap"
-gem 'pry'
 
 group :test do
-  gem 'rspec'
   gem 'rom-factory'
+  gem 'rspec', require: false
 end
